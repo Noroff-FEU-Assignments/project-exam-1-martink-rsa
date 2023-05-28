@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/pages/contact.css" />
+    <title>My Rant - Contact</title>
+    <script
+      src="../scripts/pages/contact/index.js"
+      defer
+      type="module"
+    ></script>
+    <!-- Hotjar Tracking Code for My Blog -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3531135, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="content-wrapper">
+        <header>
+          <a href="/"
+            ><div><img class="logo" src="../images/logo.png" /></div
+          ></a>
+          <nav>
+            <a href="/">Home</a><a href="/blog">Blog</a
+            ><a href="/about">About</a><a href="/contact">Contact</a>
+          </nav>
+        </header>
+        <main>
+          <div class="main-wrapper">
+            <form class="contact-form">
+              <div>
+                <label>Your name</label>
+                <input id="input-name" placeholder="Your name" />
+                <div id="error-message-name" class="error-message">
+                  Your name should be longer than 5 characters.
+                </div>
+              </div>
+              <div>
+                <label>Email</label>
+                <input id="input-email" placeholder="Your email" type="email" />
+                <div id="error-message-email" class="error-message">
+                  Your email address must be a valid email address.
+                </div>
+              </div>
+              <div>
+                <label>Subject</label>
+                <input id="input-subject" placeholder="Subject" />
+                <div id="error-message-subject" class="error-message">
+                  The subject line should be more than 15 characters.
+                </div>
+              </div>
+              <div>
+                <label>Message</label>
+                <textarea
+                  id="input-message"
+                  placeholder="Your message here..."
+                ></textarea>
+                <div id="error-message-message" class="error-message">
+                  Your message should be more than 25 characters.
+                </div>
+              </div>
+              <button class="button-link" id="submit-button">SUBMIT</button>
+            </form>
+          </div>
+        </main>
+        <footer>Copyright &copy; 2023 My Blog</footer>
+      </div>
+    </div>
+  </body>
+</html>

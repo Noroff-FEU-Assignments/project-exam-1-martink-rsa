@@ -1,0 +1,22 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  margin-top: 5px;
+  color: rgb(196, 0, 0);
+}
+
+#error-message-name,
+#error-message-email,
+#error-message-subject,
+#error-message-message {
+  display: none;
+}
